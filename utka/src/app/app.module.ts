@@ -9,6 +9,7 @@ import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app.route";
 import { HeroDashboardComponent } from './components/hero-dashboard/hero-dashboard.component';
 import { TestViewComponent } from './components/test-view/test-view.component';
+import { HttpModule }    from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TestViewComponent } from './components/test-view/test-view.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     AppRoutingModule
   ],
    providers: [HeroServiceService],
