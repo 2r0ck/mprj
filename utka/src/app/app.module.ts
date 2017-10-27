@@ -10,6 +10,7 @@ import { AppRoutingModule } from "./app.route";
 import { HeroDashboardComponent } from './components/hero-dashboard/hero-dashboard.component';
 import { TestViewComponent } from './components/test-view/test-view.component';
 import { HttpModule }    from '@angular/http';
+import { MyViewComponent } from './components/my-view/my-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpModule }    from '@angular/http';
     HeroComponentComponent,
     HeroMainComponent,
     HeroDashboardComponent,
-    TestViewComponent
+    TestViewComponent,
+    MyViewComponent
   ],
   imports: [
     BrowserModule,

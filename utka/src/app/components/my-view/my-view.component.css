@@ -1,0 +1,52 @@
+/* <div id="mainContainer">
+    <div id="fooBar"></div>
+    <div id="menu1"></div>
+    <div id="menu2"></div>
+    <div id="centerInfo"></div>
+    <div id="info1"></div>
+    <div id="info2"></div>
+</div> */
+
+#mainContainer {
+    display: grid;
+    grid-template-areas: "foo foo foo" "lmenu cinfo rmenu" "lmenu2 cinfo rmenu2";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    height: calc(100vh - 90px);
+}
+
+#fooBar {
+    grid-area: foo;
+    background-color: darkgrey;
+    margin: 0 5px 0 5px;
+}
+
+#menu1 {
+    grid-area: lmenu;
+    background-color: darkgoldenrod;
+    margin: 5px;
+}
+
+#menu2 {
+    grid-area: lmenu2;
+    background-color: darkgreen;
+    margin: 5px;
+}
+
+#centerInfo {
+    grid-area: cinfo;
+    background-color: darkkhaki;
+    margin: 5px;
+}
+
+#info1 {
+    grid-area: rmenu;
+    background-color: darkorchid;
+    margin: 5px;
+}
+
+#info2 {
+    grid-area: rmenu2;
+    background-color: deepskyblue;
+    margin: 5px;
+}
